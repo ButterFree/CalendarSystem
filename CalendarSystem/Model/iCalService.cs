@@ -4,6 +4,6 @@ using System.Linq;
 using System.Text;
 
 namespace CalendarSystem.Model {
-  static class iCalService {
+  class iCalService : CalendarService {
   }
 }
