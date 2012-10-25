@@ -6,11 +6,32 @@ using CalendarSystem.Model;
 
 namespace CalendarSystem {
   class Controller {
+    private static readonly Controller instance = new Controller(); //Singleton
     private MainView mainView = new MainView();
-    private List<CalendarService> calendarService = new List<CalendarService>();
+    private List<CalendarService> calendarServices = new List<CalendarService>();
 
-    public Controller(){
-       mainView.Show();
+    /// <summary>
+    /// Private controller.
+    /// Use GetInstance
+    /// </summary>
+    private Controller(){
+      mainView.Show();
+    }
+
+    /// <summary>
+    /// Get instance of singleton Controller
+    /// </summary>
+    /// <returns>Controller instance</returns>
+    public static Controller GetInstance() {
+      return instance;
+    }
+
+    /// <summary>
+    /// Get a list of CalendarServices
+    /// </summary>
+    /// <returns>List of CalendarService</returns>
+    public List<CalendarService> GetCalendarServices() {
+      return calendarServices;
     }
   }
 }
