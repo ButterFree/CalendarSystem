@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller.cs" />
     <Compile Include="Controller\Controller.cs" />
     <Compile Include="Model\Calendar.cs" />
     <Compile Include="Model\Event.cs" />
