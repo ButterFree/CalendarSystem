@@ -12,7 +12,7 @@ namespace CalendarSystem {
     static void Main() {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new View());
+      Application.Run(new MainView());
     }
   }
 }

@@ -8,8 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace CalendarSystem {
-  public partial class View : Form {
-    public View() {
+  public partial class MainView : Form {
+    public MainView() {
       InitializeComponent();
     }
   }
