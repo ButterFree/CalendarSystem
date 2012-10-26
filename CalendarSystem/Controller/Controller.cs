@@ -10,6 +10,10 @@ namespace CalendarSystem {
     private MainView mainView = new MainView();
     private List<CalendarService> calendarServices = new List<CalendarService>();
 
+    public static void Main() {
+      Controller.GetInstance();
+    }
+
     /// <summary>
     /// Private controller.
     /// Use GetInstance
